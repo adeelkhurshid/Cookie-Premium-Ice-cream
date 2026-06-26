@@ -1,4 +1,5 @@
 import React from 'react';
+import { Analytics } from '@vercel/analytics/react';
 import { AppProvider } from './context/AppContext';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
@@ -53,6 +54,7 @@ export default function App() {
   return (
     <AppProvider>
       <AppContent />
+      <Analytics />
     </AppProvider>
   );
 }
