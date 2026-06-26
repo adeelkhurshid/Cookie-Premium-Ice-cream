@@ -1,0 +1,6 @@
+{
+  "name": "Cookie Premium",
+  "description": "A premium, playful, and modern landing page for Cookie Premium ice cream, featuring interactive sundae builder, seasonal specials, and signature flavors.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
