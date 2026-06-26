@@ -34,7 +34,7 @@ export const FLAVORS: Flavor[] = [
     price: 6.25,
     rating: 4.7,
     reviewsCount: 198,
-    image: 'https://images.unsplash.com/photo-1488900128323-24ddcefdd64b?auto=format&fit=crop&q=80&w=600',
+    image: 'https://images.unsplash.com/photo-1501443762994-82bd5dace89a?auto=format&fit=crop&q=80&w=600',
     isNew: true,
     category: 'Seasonal',
     bgColor: 'bg-rose-50',
@@ -47,7 +47,7 @@ export const FLAVORS: Flavor[] = [
     price: 6.50,
     rating: 4.9,
     reviewsCount: 215,
-    image: 'https://images.unsplash.com/photo-1501443762994-82bd5dace89a?auto=format&fit=crop&q=80&w=600',
+    image: 'https://images.unsplash.com/photo-1507750549-a6153664c312?auto=format&fit=crop&q=80&w=600',
     category: 'Signature',
     bgColor: 'bg-amber-50',
     tagColor: 'bg-cookie-gold text-chocolate-brown font-semibold'
@@ -71,7 +71,7 @@ export const FLAVORS: Flavor[] = [
     price: 6.50,
     rating: 4.6,
     reviewsCount: 124,
-    image: 'https://images.unsplash.com/photo-1534706936960-85aa403f57fa?auto=format&fit=crop&q=80&w=600',
+    image: 'https://images.unsplash.com/photo-1543257580-7269da773bf5?auto=format&fit=crop&q=80&w=600',
     category: 'Seasonal',
     bgColor: 'bg-yellow-50',
     tagColor: 'bg-yellow-400 text-chocolate-brown font-semibold'
@@ -83,7 +83,7 @@ export const FLAVORS: Flavor[] = [
     price: 6.95,
     rating: 4.8,
     reviewsCount: 154,
-    image: 'https://images.unsplash.com/photo-1549396564-3484f880467f?auto=format&fit=crop&q=80&w=600',
+    image: 'https://images.unsplash.com/photo-1534706936960-85aa403f57fa?auto=format&fit=crop&q=80&w=600',
     isNew: true,
     category: 'Signature',
     bgColor: 'bg-purple-50',
@@ -96,7 +96,7 @@ export const FLAVORS: Flavor[] = [
     price: 5.95,
     rating: 4.8,
     reviewsCount: 412,
-    image: 'https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&fit=crop&q=80&w=600',
+    image: 'https://images.unsplash.com/photo-1576506295286-5cda18df43e7?auto=format&fit=crop&q=80&w=600',
     category: 'Classic',
     bgColor: 'bg-orange-50/50',
     tagColor: 'bg-stone-500 text-white'
@@ -118,7 +118,7 @@ export const BEST_SELLERS = [
     name: 'Dipped Waffle Dream Bowl',
     description: 'A crisp waffle bowl dipped in dark Belgian chocolate, loaded with Chocolate Avalanche and Caramel Crunch, topped with whole cookies.',
     price: 9.75,
-    image: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80&w=600',
+    image: 'https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&q=80&w=600',
     rating: 4.9,
     badge: 'Bestseller'
   },
@@ -166,7 +166,7 @@ export const SUNDAE_INGREDIENTS: SundaeIngredient[] = [
   { id: 'c-brownie', name: 'Fudge Brownie Bites', type: 'cookie', price: 1.50, color: 'bg-yellow-950', emoji: '🍰' },
 
   // CONES/BOWLS
-  { id: 'co-waffle', name: 'Signature Waffle Cone', type: 'cone', price: 1.50, color: 'bg-amber-400', emoji: '📐' },
+  { id: 'co-waffle', name: 'Signature Waffle Cone', type: 'cone', price: 1.50, color: 'bg-amber-400', emoji: '🍦' },
   { id: 'co-chocolate', name: 'Chocolate Dipped Cone', type: 'cone', price: 2.00, color: 'bg-amber-900', emoji: '🍦' },
   { id: 'co-bowl', name: 'Waffle Bowl', type: 'cone', price: 1.75, color: 'bg-amber-500', emoji: '🥣' }
 ];
@@ -209,13 +209,13 @@ export const TESTIMONIALS: Testimonial[] = [
 export const INSTAGRAM_GALLERY = [
   {
     id: 'ig-1',
-    image: 'https://images.unsplash.com/photo-1501443762994-82bd5dace89a?auto=format&fit=crop&q=80&w=400',
+    image: 'https://images.unsplash.com/photo-1497034825429-c343d7c6a68f?auto=format&fit=crop&q=80&w=400',
     likes: '1.2k',
     comments: 84
   },
   {
     id: 'ig-2',
-    image: 'https://images.unsplash.com/photo-1497034825429-c343d7c6a68f?auto=format&fit=crop&q=80&w=400',
+    image: 'https://images.unsplash.com/photo-1501443762994-82bd5dace89a?auto=format&fit=crop&q=80&w=400',
     likes: '2.5k',
     comments: 112
   },
@@ -227,13 +227,13 @@ export const INSTAGRAM_GALLERY = [
   },
   {
     id: 'ig-4',
-    image: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80&w=400',
+    image: 'https://images.unsplash.com/photo-1505394033641-40c6ad1178d7?auto=format&fit=crop&q=80&w=400',
     likes: '3.1k',
     comments: 201
   },
   {
     id: 'ig-5',
-    image: 'https://images.unsplash.com/photo-1549396564-3484f880467f?auto=format&fit=crop&q=80&w=400',
+    image: 'https://images.unsplash.com/photo-1576506295286-5cda18df43e7?auto=format&fit=crop&q=80&w=400',
     likes: '1.8k',
     comments: 69
   },

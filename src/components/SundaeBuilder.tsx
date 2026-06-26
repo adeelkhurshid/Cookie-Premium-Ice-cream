@@ -83,7 +83,7 @@ export const SundaeBuilder: React.FC = () => {
       id: `custom-sundae-${Date.now()}`,
       name: 'Custom Gourmet Sundae',
       price: totalPrice,
-      image: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80&w=600',
+      image: 'https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&q=80&w=600',
       details: ingredientsDescription
     });
   };

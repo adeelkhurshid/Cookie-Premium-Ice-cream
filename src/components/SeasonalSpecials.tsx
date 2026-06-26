@@ -121,7 +121,7 @@ export const SeasonalSpecials: React.FC = () => {
               className="relative w-80 h-80 sm:w-96 sm:h-96"
             >
               <img
-                src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80&w=800"
+                src="https://images.unsplash.com/photo-1501443762994-82bd5dace89a?auto=format&fit=crop&q=80&w=800"
                 alt="Limited Edition Summer Collection"
                 referrerPolicy="no-referrer"
                 className="w-full h-full object-cover rounded-3xl border-8 border-white shadow-2xl"

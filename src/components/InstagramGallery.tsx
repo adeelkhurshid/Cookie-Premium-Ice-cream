@@ -3,15 +3,26 @@ import { INSTAGRAM_GALLERY } from '../data';
 import { Heart, MessageCircle, X, Send, Sparkles } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 
+const CAPTIONS: Record<string, string> = {
+  'ig-1': 'Fresh, creamy Cookies & Cream scoops being crafted. Double-stuffed chocolate cookie chunks in every single bite! 🍦🍪 #CookiePremium #SweetTooth',
+  'ig-2': 'Our Signature Double Cone catch of the day! Which two premium flavors are you stacking today? 🤤🍦 #VibeCheck #CookiePremium #IceCreamCone',
+  'ig-3': 'Watch that drizzle! Adding thick warm caramel-fudge rivers over our premium vanilla bean base. 🍯🍫 #DrizzleArt #FoodAesthetic #CookiePremium',
+  'ig-4': 'Introducing Strawberry Bliss! Infused with organic forest strawberries and topped with buttery biscuit crumbs. 🍓✨ #SeasonalDrop #StrawberryBliss #CookiePremium',
+  'ig-5': 'Artisanal craftsmanship behind the scenes. Pure organic ingredients, real butter cookies, and zero shortcuts. This is the premium standard. 🍪🥣 #BehindTheScoop #ArtisanalDesserts #CookiePremium',
+  'ig-6': 'The ultimate cheat day double-header. Loaded cookie milkshake jars topped with mountain-high whipped cream and mini chocolate cookies! 🍪🥤 #MilkshakeMagic #ExtremeDesserts #CookiePremium'
+};
+
 export const InstagramGallery: React.FC = () => {
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
   const [galleryItems, setGalleryItems] = useState(INSTAGRAM_GALLERY);
   const [commentInput, setCommentInput] = useState('');
   const [commentsMap, setCommentsMap] = useState<Record<string, string[]>>({
-    'ig-1': ['Omg this looks absolutely unreal! 😍', 'Heading to Soho right now!'],
-    'ig-2': ['That cookie core waffle bowl is calling my name.', 'Best cheat meal ever!'],
-    'ig-3': ['The chocolate fudge drizzle is beautiful.'],
-    'ig-4': ['Insane aesthetics!', 'So tasty.'],
+    'ig-1': ['Omg this looks absolutely unreal! 😍', 'Heading to Soho right now!', 'Best cookies & cream in the city hands down!'],
+    'ig-2': ['That cone is a work of art!', 'Is that the Pistachio Dream on top? 💚', 'Double stack is the only correct way!'],
+    'ig-3': ['My jaw literally dropped at this drizzle.', 'Stop it, I am trying to stick to my diet 😭', 'That caramel look is luxurious.'],
+    'ig-4': ['Strawberry Bliss is finally back! Best seasonal flavor!', 'The biscuit crumbs are a genius touch 🍓', 'So clean and fresh!'],
+    'ig-5': ['The aesthetic here is immaculate.', 'Literal design goals, and flavor goals too!', 'Such a gorgeous flatlay! ig-5 is elite! ⭐'],
+    'ig-6': ['I need one of those jars in my life immediately.', 'Can we custom order these milkshakes?', 'My kids loved this one so much!']
   });
 
   const handleLike = (id: string, e: React.MouseEvent) => {
@@ -166,7 +177,7 @@ export const InstagramGallery: React.FC = () => {
                   <div className="space-y-4 max-h-[160px] md:max-h-[220px] overflow-y-auto pr-2">
                     <div className="flex items-start gap-2 text-xs">
                       <span className="font-bold text-chocolate-brown">cookie_premium</span>
-                      <span className="text-chocolate-brown/80">Double standard chocolate oreo cookie scoops stacked to perfection in our signature waffle cup! 🍦🍪</span>
+                      <span className="text-chocolate-brown/80">{CAPTIONS[currentItem.id] || "Double standard chocolate oreo cookie scoops stacked to perfection in our signature waffle cup! 🍦🍪"}</span>
                     </div>
 
                     {(commentsMap[currentItem.id] || []).map((comm, cidx) => (
